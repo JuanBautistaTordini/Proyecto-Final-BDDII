@@ -1,0 +1,31 @@
+{
+  "name": "proyecto-final-bddii",
+  "version": "1.0.0",
+  "description": "Proyecto Final BDDII - Plataforma de Eventos y Tickets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuanBautistaTordini/Proyecto-Final-BDDII.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/JuanBautistaTordini/Proyecto-Final-BDDII/issues"
+  },
+  "homepage": "https://github.com/JuanBautistaTordini/Proyecto-Final-BDDII#readme",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.3",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
