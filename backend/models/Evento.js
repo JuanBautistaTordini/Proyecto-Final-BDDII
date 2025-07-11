@@ -1,3 +1,4 @@
+//models/Evento.js
 const mongoose = require("mongoose");
 
 const TipoTicketSchema = new mongoose.Schema({

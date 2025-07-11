@@ -2,10 +2,10 @@
   "name": "proyecto-final-bddii",
   "version": "1.0.0",
   "description": "Proyecto Final BDDII - Plataforma de Eventos y Tickets",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",

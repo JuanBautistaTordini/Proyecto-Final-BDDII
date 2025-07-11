@@ -1,3 +1,4 @@
+//controller/ticketController.js
 const Evento = require('../models/Evento');
 const Ticket = require('../models/Ticket');
 const QRCode = require('qrcode');

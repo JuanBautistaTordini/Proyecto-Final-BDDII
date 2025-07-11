@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "becd00d9-ef0d-4020-9257-9a8c4e962f65",
+		"name": "PROYECTOFINAL-BDDII",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39820955"
+	},
+	"item": [
+		{
+			"name": "Crear Evento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Conferencia Tech 2025\",\r\n  \"descripcion\": \"Conferencia sobre innovación y tecnología\",\r\n  \"fecha\": \"2025-11-10T18:00:00.000Z\",\r\n  \"ubicacion\": \"Centro de Convenciones Bahía Blanca\",\r\n  \"capacidadMaxima\": 500,\r\n  \"tiposTicket\": [\r\n    {\r\n      \"nombre\": \"General\",\r\n      \"precio\": 50,\r\n      \"cantidad\": 400\r\n    },\r\n    {\r\n      \"nombre\": \"VIP\",\r\n      \"precio\": 100,\r\n      \"cantidad\": 100\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/eventos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener eventos próximos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/eventos/proximos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"eventos",
+						"proximos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comprar un ticket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"eventoId\": \"68718cc7530f2d8c075b22c0\",\r\n  \"tipoTicket\": \"VIP\",\r\n  \"comprador\": {\r\n    \"nombre\": \"Carlos Ruiz\",\r\n    \"email\": \"carlos@email.com\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/tickets/comprar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"tickets",
+						"comprar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validar ticket por QR",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/tickets/validar/6558c844e6020990",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"tickets",
+						"validar",
+						"6558c844e6020990"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reporte de ventas de un evento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/api/eventos/68718cc7530f2d8c075b22c0/reporte",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"eventos",
+						"68718cc7530f2d8c075b22c0",
+						"reporte"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
