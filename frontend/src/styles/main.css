@@ -1,0 +1,24 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-primary {
+    background-color: #0d6efd;
+  }
+  
+  .evento-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }

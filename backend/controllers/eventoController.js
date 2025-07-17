@@ -37,3 +37,13 @@ exports.reporteVentas = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
+exports.eliminarEventoPorId = async (req, res) => {
+  try {
+    const evento = await Evento.findByIdAndDelete(req.params.id);
+    if (!evento) return res.status(404).json({ mensaje: "Evento no encontrado" });
+    res.json({ mensaje: "Evento eliminado exitosamente" });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
